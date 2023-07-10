@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 1. Write a JavaScript program that accept two integers and
+ * display the larger.Go to the editor */
+/******* Start Your Code *********/
+let firstNumber = prompt("Enter the first integer:");
+let secondNumber = prompt("Enter the second integer");
+if(firstNumber > secondNumber){
+     alert("The First Number ( "+ firstNumber +" ) is Larger " );}
+    else if(secondNumber > firstNumber ){
+    alert("The Second Number ( "+ secondNumber +" ) is Larger " );}
+    else{
+        alert("The two Numbers are equal");}
+
+
+ /******* End Your Code ********* */
+
+/* 2. Write a JavaScript conditional statement to find the sign
+ of product of three numbers. Display an alert box with the 
+ specified sign. Go to the editor 
+Sample numbers : 3, -7, 2 
+Output : The sign is - */
+/******* Start Your Code *********/
+  let num1 = 3;
+  let num2 = -7;
+  let num3 = 2;
+
+  if (num1 >= 0 && num2 >= 0 && num3 >= 0){
+    alert("The sign is + ")
+  }else (alert("The sign is -"))
+
+
+ /******* End Your Code ********* */
+
+/* 3. Write a JavaScript conditional statement to sort three numbers. Display an alert box to show the result. Go to the editor 
+Sample numbers : 0, -1, 4 
+Output : 4, 0, -1 */
+/******* Start Your Code *********/
+  let no1 = 0;
+  let no2 = -1;
+  let no3 = 4;
+
+  if (no1 > no2 && no1 > no3 ) {
+    if (no2 > no3)
+    {alert(no1 + "," + no2 + "," + no3);}
+    else(no3 > no2)
+    {alert(no1 + "," + no3 + "," + no2);}}
+  else if ( no2 > no1 && no2 > no3 ){
+    if (no1 > no3)
+    {alert(no2 + "," + no1 + "," + no3);}
+    else(no3 > no1)
+    {alert(no2 + "," + no3 + "," + no1);}}
+  else(no3 > no1 && no3 > no2)
+    if(no2 > no1)
+    {alert(no3 + "," + no2 + "," + no1);}
+    else(no1 > no2)
+    {alert(no3 + "," + no1 + "," + no2);}
+    
+  
+ /******* End Your Code ********* */
+
+
+/*4. Write a JavaScript conditional statement to find the largest of five numbers. 
+Display an alert box to show the result. Go to the editor 
+Sample numbers : -5, -2, -6, 0, -1 
+Output : 0 */
+
+/******* Start Your Code *********/
+  let n1 = -5 
+  let n2 = -2
+  let n3 = -6
+  let n4 = 0
+  let n5 = -1
+
+ if(n1 > n2 && n1 > n3 && n1 > n4 && n1 > n5 )
+ {alert(n1)}
+ else if (n2 > n1 && n2 > n3 && n2 > n4 && n2 > n5)
+ {alert(n2)}
+ else if (n3 > n1 && n3 > n2 && n3 > n4 && n3 > n5)
+ {alert(n3)}
+ else if (n4 > n1 && n4 > n2 && n4 > n3 && n4 > n5)
+ {alert(n4)}
+ else (n5 > n1 && n5 > n2 && n5 > n3 && n5 > n4)
+ {alert(n5)}
+
+ /******* End Your Code ********* */
+
+ /* 5.Write the if statement to display "Hello World" if x is greater than y, otherwise alert "Goodbye".*/
+/******* Start Your Code *********/
+  let x = 10;
+  let y = 15;
+  if (x > y) {
+    console.log("Hello World");
+  }else { console.log("Goodbye"); }
+
+
+
+ /******* End Your Code ********* */
+
+
+
+
+    </script>
+</body>
+</html>

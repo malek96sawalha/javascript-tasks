@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// 1. Write a JS code to print numbers from 1 to 10
+ for (let i = 1; i <= 10; i++);
+ console.log(i);
+
+/*2. Write a JS code to print Even numbers in arr :
+   var arr = [13,23,12,45,22,48,66,100]
+*/
+var arr = [13, 23, 12, 45, 22, 48, 66, 100];
+
+for (let e = 0; e < arr.length; e++) {
+  if (arr[e] % 2 === 0) {
+    console.log(arr[e]);
+  }
+}
+/* 
+3. Write a JS code to print a pattern using for loop
+
+   1 
+   1 2 
+   1 2 3 
+   1 2 3 4 
+   1 2 3 4 5 
+   1 2 3 4 5 6 
+   1 2 3 4 5 6 7 
+   1 2 3 4 5 6 7 8 
+
+*/
+var rows = 8; 
+
+for (let t = 1; t <= rows; t++) {
+  let pattern = "";
+
+  for (let j = 1; j <= t; j++) {
+    pattern += j + " ";
+  }
+}
+  console.log(pattern);
+ /* 
+ Check if a string contains the letter “y”. Print “yes” if it does and “no” if it does not.
+let x = "don’t know why"
+
+*/
+let x = "don’t know why";
+
+if (x.includes("y")) {
+  console.log("yes");
+} else {
+  console.log("no");
+}
+    </script>
+</body>
+</html>
