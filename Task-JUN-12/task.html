@@ -305,8 +305,12 @@ Ex: isEven(2)
 => true
 
 */
-
-
+function isEven(number) {
+  if (number % 2 == 0) {
+    console.log("true")}
+    else {console.log("false")}}
+    isEven(1)
+    isEven(2)
 /*
 16
 Write a function called isOdd
@@ -320,8 +324,12 @@ Ex: isOdd(5)
 => true
 
 */
-
-
+function isOdd(number) {
+  if (!(number % 2) == 0) {
+    console.log("true")}
+    else {console.log("false")}}
+    isOdd(4)
+    isOdd(5)
 /*
 17
 Write a function called positive
@@ -334,8 +342,15 @@ Ex: positive(-5)
 => 5
 
 */
+function positive(number){
+  if (number < 0 ) {
 
-
+ return number * -1 ;
+  }else {return number}
+  
+}
+console.log(positive(4))
+console.log(positive(-5))
 /*
 18
 Write a function called fullName
@@ -348,8 +363,11 @@ Ex: fullName("Adam","McCallen")
 Ex: fullName("Alex", "Mercer")
 => "Alex Mercer"
 */
-
-
+function fullName(firstName,lastName){
+  console.log(`${firstName} ${lastName}`)
+}
+fullName("Adam","McCallen")
+fullName("Alex", "Mercer")
 /*
 19
 Write a function called average
@@ -363,8 +381,13 @@ Ex: average(5,7,9,3,5)
 => 5.8
 
 */
+function average(n1 , n2 , n3 , n4 , n5){
+let avg = n1 + n2 + n3 + n4 + n5
+console.log(avg/5)
 
-
+}
+average(1,2,3,4,5);
+average(5,7,9,3,5);
 /*
 20
 Write a function called randomNumber
@@ -379,7 +402,12 @@ Ex: randomNumber()
 => 0.475
 
 */
-
+function randomNumber (){
+ 
+ return Math.random();
+  
+}
+console.log(randomNumber())
 /*
 21
 Write a function called randomBetweenNumbers
@@ -394,8 +422,12 @@ Ex: randomBetweenNumbers(3,100)
 => 23
 
 */
+function randomBetweenNumbers(num1,num2){
+  return (Math.random()*num2)+num1;
 
+}
 
+console.log(randomBetweenNumbers(1,8))
 /*
 22
 Write a function called scoreInUniversty
@@ -416,7 +448,15 @@ Ex: scoreInUniversty(3)
 Ex: scoreInUniversty(71)
 => "C"
 */
-
+function scoreInUniversty(rate){
+  if(rate >= 95 && rate <= 100){console.log("A")}
+  else if(rate >= 85 && rate <= 94){console.log("B")}
+  else if(rate >= 70 && rate <= 84){console.log("c")}
+  else if(rate >= 50 && rate <= 69){console.log("D")}
+  else {console.log("F")}}
+  scoreInUniversty(96)
+  scoreInUniversty(3)
+  scoreInUniversty(71)
 
 /*
 23
@@ -435,7 +475,14 @@ Ex: counter()
 => 3
 
 */
-
+let i=0
+function counter (x){
+  ++i
+return console.log(i) 
+}
+counter()
+counter()
+counter()
 
 /*
 24
@@ -468,6 +515,12 @@ Ex: resetCounter()
 Ex: counter()
 => 1
 */
+function resetCounter(){
+ console.log( i+' and the counter reset now' )
+ return i=0
+}
+resetCounter()
+counter()
     </script>
 </body>
 </html>
