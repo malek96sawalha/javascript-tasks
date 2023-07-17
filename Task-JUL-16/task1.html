@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 30px; height:20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="color" id="setcolor" onchange="colorchange()">
+    </div>
+
+    <script>
+        if (sessionStorage.length > 0) {
+            let col = sessionStorage.getItem("setcolor")
+            document.body.style.backgroundColor = col;}
+        function colorchange(){
+            let color = document.querySelector("#setcolor").value;
+            sessionStorage.setItem("setcolor",`${color}`);
+            let col = sessionStorage.getItem("setcolor")
+            document.body.style.backgroundColor = col;}
+    </script>
+</body>
+</html>
+
+
+
+
+
