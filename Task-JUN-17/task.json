@@ -1,0 +1,9 @@
+
+
+{
+    "name": ["Malek Sawalha","Sami Al-Najadat","Ahmad Al-Tamimi","Murad Al-Shorman","Mohammad Al-Houwari"],
+    "age": [27,28,23,26,25],
+    "major": ["Chemistry","Accounting","Math","Civil Engineering","Doctor"],
+    "university": ["Yarmouk University","Yarmouk University","Jordan University of Science and Technology","Yarmouk University","Harvard University"],
+    "image" : ["images.jpg","images.jpg","images.jpg","images.jpg","images.jpg"]
+}
