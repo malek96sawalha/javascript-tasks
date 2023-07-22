@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(45, 43, 43);
+    color: azure;
+}
+header{
+    padding: 2rem 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    color: gray
+}
+#new-task-form{
+    display: flex;
+
+}
+input, button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+#new-task-input{
+    flex: 1 1 0%;
+    background-color: rgb(23, 22, 22);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: gray;
+    font-size: 1.25rem;
+
+}
+#new-task-input::placeholder{
+    color: gray;
+}
+#new-task-submit{
+    color: plum;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right, plum, purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transition: 0.4s;
+}
+#new-task-submit:hover{
+    opacity: 0.8;
+}
+#new-task-submit:active{
+    opacity: 0.6;
+}
+main{
+    flex: 1 1 0%;
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+  
+}
+.task-list{
+   padding: 1rem; 
+}
+.task-list h2{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: gray;
+    margin-bottom: 1rem;
+}
+
+#tasks .task{
+    display: flex;
+    justify-content: space-between;
+    
+}
